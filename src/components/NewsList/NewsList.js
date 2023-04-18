@@ -4,10 +4,10 @@ import { Loader } from '../Loader/Loader';
 import { NewsItem } from '../NewsItem/NewsItem';
 import { Error } from '../Error/Error';
 import { NewsListWrapper } from './NewsList.styled';
+
 export class NewsList extends Component {
   state = {
     news: null,
-    // loading: false,
     error: '',
     status: '',
   };
@@ -48,36 +48,36 @@ export class NewsList extends Component {
         </NewsListWrapper>
       );
     }
-
-    // return (
-    //   <div>
-    //     {this.state.error && <h3>{this.state.error}</h3>}
-    //     {this.state.loading && (
-    //       <MutatingDots
-    //         height="100"
-    //         width="100"
-    //         color="#4fa94d"
-    //         secondaryColor="#4fa94d"
-    //         radius="12.5"
-    //         ariaLabel="mutating-dots-loading"
-    //         wrapperStyle={{}}
-    //         wrapperClass=""
-    //         visible={true}
-    //       />
-    //     )}
-    //     {this.state.news &&
-    //       this.state.news.articles.map(
-    //         ({ url, title, urlToImage, description }) => {
-    //           return (
-    //             <div key={url}>
-    //               <h2>{title}</h2>
-    //               <img src={urlToImage} alt={title} />
-    //               <p>{description}</p>
-    //             </div>
-    //           );
-    //         }
-    //       )}
-    //   </div>
-    // );
   }
 }
+
+// return (
+//   <div>
+//     {this.state.error && <h3>{this.state.error}</h3>}
+//     {this.state.loading && (
+//       <MutatingDots
+//         height="100"
+//         width="100"
+//         color="#4fa94d"
+//         secondaryColor="#4fa94d"
+//         radius="12.5"
+//         ariaLabel="mutating-dots-loading"
+//         wrapperStyle={{}}
+//         wrapperClass=""
+//         visible={true}
+//       />
+//     )}
+//     {this.state.news &&
+//       this.state.news.articles.map(
+//         ({ url, title, urlToImage, description }) => {
+//           return (
+//             <div key={url}>
+//               <h2>{title}</h2>
+//               <img src={urlToImage} alt={title} />
+//               <p>{description}</p>
+//             </div>
+//           );
+//         }
+//       )}
+//   </div>
+// );
