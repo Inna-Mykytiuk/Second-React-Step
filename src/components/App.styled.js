@@ -16,7 +16,8 @@ export const TextReport = styled.div`
   font-weight: 700;
   font-family: 'Raleway-Bold', sans-serif;
 
-  color: rgb(64, 69, 72);
+  /* color: rgb(64, 69, 72); */
+  color: red;
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
 `;
