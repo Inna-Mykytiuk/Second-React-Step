@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Loader } from './Loader/Loader';
 import { SearchBar } from './Search/Search';
 import { NewsItemList } from './NewsList/NewsList';
-import { AppWrapper, TextReport, Button } from './App.styled';
+import { AppWrapper, TextReportG, TextReportB, Button } from './App.styled';
 
 export const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -58,13 +58,13 @@ export const App = () => {
       />
 
       {newsItems.length > 0 && (
-        <TextReport>Total articles found: {newsItems.length}</TextReport>
+        <TextReportG>Total articles found: {newsItems.length}</TextReportG>
       )}
 
       {isInvalidSearch && (
-        <TextReport>
+        <TextReportB>
           Invalid search query. Please enter a valid search term.
-        </TextReport>
+        </TextReportB>
       )}
 
       <NewsItemList newsItems={displayedItems} />

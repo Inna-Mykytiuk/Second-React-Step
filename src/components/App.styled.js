@@ -10,7 +10,7 @@ export const AppWrapper = styled.div`
   margin-top: 50px;
 `;
 
-export const TextReport = styled.div`
+export const TextReportB = styled.div`
   margin: 20px 0;
   font-size: 20px;
   font-weight: 700;
@@ -18,6 +18,17 @@ export const TextReport = styled.div`
 
   /* color: rgb(64, 69, 72); */
   color: red;
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+`;
+
+export const TextReportG = styled.div`
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Raleway-Bold', sans-serif;
+
+  color: rgb(64, 69, 72);
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
 `;
