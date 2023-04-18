@@ -8,4 +8,5 @@ export const NewsListWrapper = styled.div`
   list-style: none;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 30px;
 `;

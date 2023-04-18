@@ -37,7 +37,7 @@ export const Button = styled.button`
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
   font-family: 'Raleway-Regular', sans-serif;
-  margin: 30px 0;
+  margin-bottom: 30px;
 
   &:hover,
   &:focus {

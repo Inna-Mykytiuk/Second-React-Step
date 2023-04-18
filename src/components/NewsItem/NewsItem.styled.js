@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const NewsItemCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 320px;
   background-color: #fff;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,4 +30,47 @@ export const Image = styled.img`
   height: 240px;
   object-fit: cover;
   object-position: center;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  a {
+    padding: 5px 10px;
+    /* background-color: rgb(33, 150, 243); */
+    background-color: rgb(43 46 48);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 10px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.8;
+    font-size: 16px;
+
+    text-decoration: none;
+    text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+      rgba(0, 0, 0, 0.5) 1px 1px 1px;
+    font-family: 'Raleway-Regular', sans-serif;
+
+    &:hover,
+    &:focus {
+      /* filter: brightness(95%); */
+      opacity: 1;
+      color: #fff;
+    }
+
+    &:active {
+      scale: 0.95;
+    }
+  }
 `;

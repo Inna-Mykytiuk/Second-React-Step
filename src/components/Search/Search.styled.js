@@ -16,10 +16,13 @@ export const SearchWrapper = styled.div`
   h1 {
     margin: 0;
     margin-bottom: 20px;
+
     font-size: 30px;
     font-weight: 700;
     font-family: 'Raleway-Bold', sans-serif;
     color: rgb(64 69 72);
+
+    text-align: center;
     text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
       rgba(0, 0, 0, 0.5) 1px 1px 1px;
   }
@@ -57,6 +60,7 @@ export const SearchWrapper = styled.div`
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    gap: 15px;
     input {
       width: 100%;
       max-width: 75%;
