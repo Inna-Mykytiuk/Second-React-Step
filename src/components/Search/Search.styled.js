@@ -1,29 +1,25 @@
 import styled from 'styled-components';
 
-// export const SearchWrapper = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-top: 20px;
-// `;
 export const SearchWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 40%;
-  background-color: #fff;
+
   padding: 20px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 10px;
   margin: 0 auto;
-  /* margin-bottom: 50px; */
+  background-color: rgb(255 255 255 / 45%);
+
   h1 {
     margin: 0;
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
     font-family: 'Raleway-Bold', sans-serif;
+    color: rgb(64 69 72);
     text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
       rgba(0, 0, 0, 0.5) 1px 1px 1px;
   }
