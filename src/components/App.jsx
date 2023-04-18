@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Loader } from './Loader/Loader';
 import { SearchBar } from './Search/Search';
 import { NewsItemList } from './NewsList/NewsList';
-import { AppWrapper } from './App.styled';
+import { AppWrapper, TextReport, Button } from './App.styled';
 
 export const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -43,18 +43,19 @@ export const App = () => {
 
   return (
     <AppWrapper>
-      <h1>News Search App</h1>
       <SearchBar
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         handleSearch={handleSearch}
       />
 
-      {newsItems.length > 0 && <p>Total articles found: {newsItems.length}</p>}
+      {newsItems.length > 0 && (
+        <TextReport>Total articles found: {newsItems.length}</TextReport>
+      )}
       <NewsItemList newsItems={displayedItems} />
       {isLoading && <Loader />}
       {displayedItems.length < newsItems.length && (
-        <button onClick={handleLoadMore}>Load More</button>
+        <Button onClick={handleLoadMore}>Load More</Button>
       )}
     </AppWrapper>
   );
