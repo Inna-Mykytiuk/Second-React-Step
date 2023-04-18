@@ -1,5 +1,8 @@
 import { SearchWrapper } from './Search.styled';
 // import { toast } from 'react-hot-toast';
+// import { BsFillTelephoneFill, BsPersonFill } from 'react-icons/bs';
+
+import { FiSearch } from 'react-icons/fi';
 
 export const SearchBar = ({ searchTerm, setSearchTerm, handleSearch }) => {
   return (
@@ -8,11 +11,14 @@ export const SearchBar = ({ searchTerm, setSearchTerm, handleSearch }) => {
       <form onSubmit={handleSearch}>
         <input
           type="text"
-          placeholder="Search for news"
+          placeholder="Search ..."
           value={searchTerm}
           onChange={e => setSearchTerm(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <button type="submit">
+          <FiSearch size="18" />
+          Search
+        </button>
       </form>
     </SearchWrapper>
   );
