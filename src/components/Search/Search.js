@@ -1,6 +1,5 @@
 import { SearchWrapper } from './Search.styled';
 // import { toast } from 'react-hot-toast';
-// import { BsFillTelephoneFill, BsPersonFill } from 'react-icons/bs';
 
 import { FiSearch } from 'react-icons/fi';
 

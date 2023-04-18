@@ -3,6 +3,7 @@ import { Loader } from './Loader/Loader';
 import { SearchBar } from './Search/Search';
 import { NewsItemList } from './NewsList/NewsList';
 import { AppWrapper, TextReport, Button } from './App.styled';
+// import { ToastContainer, toast } from 'react-toastify';
 
 export const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -20,9 +21,13 @@ export const App = () => {
       setNewsItems(data.response.docs);
       setDisplayedItems(data.response.docs.slice(0, 4));
       setIsLoading(false);
+      // toast.error('There are no images for your request');
+      return;
     } catch (error) {
       console.error(error);
-      setIsLoading(false);
+      // setIsLoading(false);
+      // toast.error('There are no images for your request');
+      // return;
     }
   }
 
@@ -57,6 +62,7 @@ export const App = () => {
       {displayedItems.length < newsItems.length && (
         <Button onClick={handleLoadMore}>Load More</Button>
       )}
+      {/* <ToastContainer /> */}
     </AppWrapper>
   );
 };
