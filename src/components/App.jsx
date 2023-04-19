@@ -4,6 +4,7 @@ import { SearchBar } from './Search/Search';
 import { NewsItemList } from './NewsList/NewsList';
 import { AppWrapper, TextReportG, TextReportB, Button } from './App.styled';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 export const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,8 +26,6 @@ export const App = () => {
     try {
       const response = await axios.get(URL);
       const data = response.data;
-      // setNewsItems(data.response.docs);
-      // setDisplayedItems(data.response.docs.slice(0, 4));
       setIsLoading(false);
       const sortedNewsItems = data.response.docs.sort((a, b) =>
         b.pub_date.localeCompare(a.pub_date)
@@ -41,6 +40,10 @@ export const App = () => {
 
   function handleSearch(e) {
     e.preventDefault();
+    if (!/^[a-zA-Z]+$/.test(searchTerm)) {
+      toast.warn('Please enter a valid English word.');
+      return;
+    }
     getNews(searchTerm);
     setSearchTerm('');
   }
@@ -65,11 +68,8 @@ export const App = () => {
       {newsItems.length > 0 && (
         <TextReportG>Total articles found: {newsItems.length}</TextReportG>
       )}
-
-      {isInvalidSearch && (
-        <TextReportB>
-          Invalid search query. Please enter a valid search term.
-        </TextReportB>
+      {!isInvalidSearch && newsItems.length === 0 && (
+        <TextReportB>Please enter a valid English word.</TextReportB>
       )}
 
       <NewsItemList newsItems={displayedItems} />
@@ -80,14 +80,3 @@ export const App = () => {
     </AppWrapper>
   );
 };
-
-// try {
-//         const response = await axios.get(URL);
-//         const data = response.data;
-//         const sortedNewsItems = data.response.docs.sort((a, b) =>
-//           b.pub_date.localeCompare(a.pub_date)
-//         );
-//         setNewsItems(sortedNewsItems);
-//         setDisplayedItems(sortedNewsItems.slice(0, 4));
-//         setIsLoading(false);
-//       }
