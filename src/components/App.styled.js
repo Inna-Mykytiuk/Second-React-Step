@@ -14,9 +14,7 @@ export const TextReportB = styled.div`
   margin: 20px 0;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Raleway-Bold', sans-serif;
 
-  /* color: rgb(64, 69, 72); */
   color: red;
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
@@ -26,7 +24,6 @@ export const TextReportG = styled.div`
   margin: 20px 0;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Raleway-Bold', sans-serif;
 
   color: rgb(64, 69, 72);
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
@@ -35,8 +32,7 @@ export const TextReportG = styled.div`
 
 export const Button = styled.button`
   padding: 10px 20px;
-  /* background-color: rgb(33, 150, 243); */
-  background-color: rgb(43 46 48);
+  background-color: rgb(43, 46, 48);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -48,12 +44,11 @@ export const Button = styled.button`
   font-weight: 700;
   text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  font-family: 'Raleway-Regular', sans-serif;
+
   margin-bottom: 30px;
 
   &:hover,
   &:focus {
-    /* filter: brightness(95%); */
     opacity: 1;
     color: #fff;
   }
