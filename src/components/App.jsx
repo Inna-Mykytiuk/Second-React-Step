@@ -25,6 +25,7 @@ export const App = () => {
     try {
       const response = await fetch(URL);
       const data = await response.json();
+      console.log(data);
       setNewsItems(data.response.docs);
       setDisplayedItems(data.response.docs.slice(0, 4));
       setIsLoading(false);

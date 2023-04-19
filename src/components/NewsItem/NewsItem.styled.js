@@ -45,8 +45,7 @@ export const Content = styled.div`
   }
 
   a {
-    padding: 5px 10px;
-    /* background-color: rgb(33, 150, 243); */
+    padding: 5px 8px;
     background-color: rgb(43 46 48);
     color: #fff;
     border: none;
@@ -55,16 +54,15 @@ export const Content = styled.div`
     box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 10px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0.8;
-    font-size: 16px;
+    font-size: 14px;
 
     text-decoration: none;
     text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
       rgba(0, 0, 0, 0.5) 1px 1px 1px;
-    font-family: 'Raleway-Regular', sans-serif;
+    font-family: inherit;
 
     &:hover,
     &:focus {
-      /* filter: brightness(95%); */
       opacity: 1;
       color: #fff;
     }

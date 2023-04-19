@@ -14,6 +14,11 @@ export const NewsItemList = ({ newsItems }) => {
           image={item.multimedia?.[0]?.url}
           description={item.abstract}
           link={item.web_url}
+          pubDate={new Date(item.pub_date).toLocaleDateString('en-US', {
+            year: '2-digit',
+            month: '2-digit',
+            day: '2-digit',
+          })}
         />
       ))}
     </NewsListWrapper>
