@@ -6,17 +6,16 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const SearchBar = ({ searchTerm, setSearchTerm, handleSearch }) => {
-  // const notify = () =>
-  //   toast.warn('Please enter a new search term.', {
-  //     position: 'top-right',
-  //     autoClose: 1500,
-  //     hideProgressBar: false,
-  //     closeOnClick: true,
-  //     pauseOnHover: true,
-  //     draggable: true,
-  //     progress: undefined,
-  //     theme: 'light',
-  //   });
+  // const notify = () => {
+  //   if (!/^[a-zA-Z]+$/.test(searchTerm)) {
+  //     toast.warn('Please enter a valid English word.');
+  //     return;
+  //   }
+  //   // if (!/^[a-zA-Z\u00C0-\u024F]+$/.test(searchTerm)) {
+  //   //   toast.warn('Please enter a valid word.');
+  //   //   return;
+  //   // }
+  // };
 
   return (
     <SearchWrapper>
