@@ -7,7 +7,7 @@ export const AppWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  /* margin-top: 50px; */
+  margin-top: 50px;
 `;
 
 export const TextReportB = styled.div`
