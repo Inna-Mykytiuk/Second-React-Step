@@ -19,7 +19,7 @@ export const SearchBar = ({ searchTerm, setSearchTerm, handleSearch }) => {
 
   return (
     <SearchWrapper>
-      <h1>News Search App</h1>
+      <h1>The New York Times</h1>
       <form onSubmit={handleSearch}>
         <input
           type="text"

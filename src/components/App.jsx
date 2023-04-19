@@ -63,6 +63,9 @@ export const App = () => {
 
   return (
     <AppWrapper>
+      {!isInvalidSearch && newsItems.length === 0 && (
+        <TextReportB>Please enter a valid English word.</TextReportB>
+      )}
       <SearchBar
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
@@ -71,9 +74,6 @@ export const App = () => {
 
       {newsItems.length > 0 && (
         <TextReportG>Total articles found: {newsItems.length}</TextReportG>
-      )}
-      {!isInvalidSearch && newsItems.length === 0 && (
-        <TextReportB>Please enter a valid English word.</TextReportB>
       )}
 
       <NewsItemList newsItems={displayedItems} />
