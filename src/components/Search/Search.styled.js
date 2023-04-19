@@ -19,7 +19,7 @@ export const SearchWrapper = styled.div`
 
     font-size: 30px;
     font-weight: 700;
-    font-family: 'Raleway-Bold', sans-serif;
+    font-family: 'Playfair-Regular', sans-serif;
     color: rgb(64 69 72);
 
     text-align: center;

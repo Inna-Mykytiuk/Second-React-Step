@@ -11,7 +11,11 @@ export const GlobalStyle = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   }
-  @font-face {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Playfair Display',
+    sans-serif;
+  ${
+    '' /* @font-face {
     font-family: 'Raleway-Bold', sans-serif;
     src: url('../../public/Raleway-Bold.ttf') format('truetype');
     font-weight: 700;
@@ -19,6 +23,12 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Raleway-Regular', sans-serif;
     src: url('../../public/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+  } */
+  }
+  @font-face {
+    font-family: 'Playfair-Regular', sans-serif;
+    src: url('../../public/PlayfairDisplay-Regular.ttf') format('truetype');
     font-weight: 400;
   }
   ${'' /* background-image: url( '../Background/b1.jpg'); */}
