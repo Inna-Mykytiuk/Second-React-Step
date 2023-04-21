@@ -37,6 +37,7 @@ export const SearchWrapper = styled.div`
     gap: 15px;
     input {
       width: 100%;
+      background-color: transparent;
 
       padding: 10px;
       border: none;
